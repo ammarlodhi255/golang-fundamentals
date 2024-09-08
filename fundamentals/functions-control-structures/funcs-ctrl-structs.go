@@ -30,6 +30,17 @@ func main() {
 	// default:
 	// 	fmt.Printf("The result of the division is %v with a remainder %v", result, remainder)
 	// }
+
+	// Conditional switch statement:
+
+	// switch remainder {
+	// case 0:
+	// 	fmt.Printf("The result of the division is: %v\n", result)
+	// case 1, 2:
+	// 	fmt.Printf("The result of the division is %v with a remainder either 1 or 2 %v", result, remainder)
+	// default:
+	// 	fmt.Printf("The result of the division is %v with a remainder %v", result, remainder)
+	// }
 }
 
 func divideNums(numerator int, denominator int) (int, int, error) {

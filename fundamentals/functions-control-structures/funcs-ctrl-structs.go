@@ -19,6 +19,17 @@ func main() {
 	} else {
 		fmt.Printf("The result of the division is %v with a remainder %v", result, remainder)
 	}
+
+	// You can also use switch statement:
+
+	// switch {
+	// case err != nil:
+	// 	fmt.Println(err.Error())
+	// case remainder == 0:
+	// 	fmt.Printf("The result of the division is: %v\n", result)
+	// default:
+	// 	fmt.Printf("The result of the division is %v with a remainder %v", result, remainder)
+	// }
 }
 
 func divideNums(numerator int, denominator int) (int, int, error) {

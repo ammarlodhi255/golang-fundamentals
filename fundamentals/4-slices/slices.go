@@ -31,4 +31,14 @@ func main() {
 	myIntSlice4[0] = 1
 	myIntSlice4[1] = 2
 	fmt.Println("myIntSlice4 after:", myIntSlice4)
+
+	// You can iterate through slices in the following ways:
+
+	for i := 0; i < len(myIntSlice4); i++ {
+		fmt.Println(myIntSlice4[i])
+	}
+
+	for index, value := range myIntSlice4 {
+		fmt.Println(index, value)
+	}
 }

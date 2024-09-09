@@ -26,7 +26,9 @@ func main() {
 	// Another way to create slices is through a make function
 
 	myIntSlice4 := make([]int32, 2, 8) // (type, num_of_elems, capacity)
+	fmt.Println("myIntSlice4 before:", myIntSlice4)
 
-	fmt.Println(myIntSlice4)
-
+	myIntSlice4[0] = 1
+	myIntSlice4[1] = 2
+	fmt.Println("myIntSlice4 after:", myIntSlice4)
 }

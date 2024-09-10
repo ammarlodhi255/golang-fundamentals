@@ -9,13 +9,11 @@ func main() {
 	fmt.Println(myMap)
 
 	// Another way of creating maps:
-	var myMap2 map[string]uint8 = make(map[string]uint8) // Empty by default
+	// var myMap2 map[string]uint8 = make(map[string]uint8) // Empty by default
 
 	for key, value := range myMap {
 		fmt.Printf("%v: %v\n", key, value)
 	}
-
-	fmt.Println(myMap2)
 
 	// Accessing values through keys:
 	fmt.Println(myMap["Ammar"])
@@ -23,7 +21,7 @@ func main() {
 
 	// We can check that by realizing that accessing a value returns two values:
 
-	key := "Ammar"
+	key := "Adam"
 	var age, ok = myMap[key] // ok = false
 
 	if ok {
@@ -31,6 +29,10 @@ func main() {
 	} else {
 		fmt.Println("There is no key named", key)
 	}
+
+	// Add a key,value pair
+
+	myMap["Adam"] = 24
 
 	// Delete a value using "delete"
 
